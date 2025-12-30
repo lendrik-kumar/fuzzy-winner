@@ -1,0 +1,62 @@
+/* Theme Variables */
+:root[data-theme="hellokitty"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #fce7f3;
+  --bg-tertiary: #f3e8ff;
+  --text-primary: #000000;
+  --text-secondary: #be185d;
+  --border-color: #ec4899;
+  --accent-color: #db2777;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --button-bg: #ec4899;
+  --button-hover: #db2777;
+}
+
+:root[data-theme="spiderman"] {
+  --bg-primary: #0a1a3f;            /* deep spidey blue */
+  --bg-secondary: #c1121f;          /* classic spider red */
+  --bg-tertiary: #1d4ed8;           /* bright web blue */
+  
+  --text-primary: #ffffff;          /* clean white text */
+  --text-secondary: #ffd166;        /* electric gold accents */
+  
+  --border-color: #ffd166;          /* gold trim */
+  --accent-color: #ff2e2e;          /* glowing spider red */
+  
+  --card-bg: rgba(10, 26, 63, 0.92); /* glossy dark blue panels */
+  
+  --button-bg: #c1121f;             /* bold red buttons */
+  --button-hover: #1d4ed8;          /* blue hover pop */
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2.5s ease-in-out infinite;
+}
+
+@import "tailwindcss";
